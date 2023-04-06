@@ -20,7 +20,7 @@ import { useSelector } from 'react-redux';
 const { height, width } = Dimensions.get("window");
 import uuid from 'react-native-uuid'
 import InstaStory from 'react-native-insta-story';
-export default function Home({ navigation }) {
+export default function Home() {
     const [allUser, setAllUser] = useState([])
     const DataUser = useSelector(state => state.userData)
 

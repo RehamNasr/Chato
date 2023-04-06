@@ -1,38 +1,66 @@
 
-import React,{useState} from 'react';
-import type {PropsWithChildren} from 'react';
+import React, { useState, useEffect } from 'react';
 import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
-  Dimensions,
-  Image,
-  TextInput,
-  TouchableOpacity
+    SafeAreaView,
+    ScrollView,
+    StyleSheet,
+    Text,
+    View,
+    Dimensions,
+    Image,
+    TextInput,
+    TouchableOpacity,
+    ActivityIndicator,
+    StatusBar,
+    FlatList
 } from 'react-native';
-import * as Const from './constant/Const'
-import Search from './home/Search';
-const{height,width}=Dimensions.get("window");
-import Navigation from './navigation/Navigation';
-// import Chat from './home/Chat'
-import {Provider} from 'react-redux'
-import  {Store}  from './Redux/Store';
-import Splash from './register/Splash';
-export default function App(){
-   
-  return(
-    <>
-    <Provider store={Store}>
-    <Navigation/>
-         {/* <Splash/> */}
-    </Provider>
-    </>
+// import * as Const from '../constant/Const'
+// import Ionicons from 'react-native-vector-icons/Ionicons'
+const { height, width } = Dimensions.get("window");
 
-  )
+export default function Search({ navigation }) {
+  
+
+
+
+    // search = (value) => {
+    //     setAllUser(allUserBackup.filter((it) => it.name.match(value)))
+    // }
+   
+  
+    return (
+        <>
+            <StatusBar backgroundColor={Const.first_color} />
+<View>
+            
+            </View>
+
+               
+            
+        </>
+    )
 }
+
+
+
+const styles = StyleSheet.create({
+     Container: {
+        flex: 1,
+        backgroundColor: "#fff",
+        alignItems: "center"
+    }, header: {
+        height: height * .09,
+        width: width,
+        paddingHorizontal: width * .02,
+        backgroundColor: "#fff",
+        alignItems: "center",
+        flexDirection: "row",
+        elevation: 5,
+        margin:1
+    },
+  
+  
+
+});
 
 
