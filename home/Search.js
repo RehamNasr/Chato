@@ -201,12 +201,12 @@ const styles = StyleSheet.create({
         color: Const.first_color,
         fontSize: 20,
         marginHorizontal: 5,
-        marginLeft: width * .04
+        marginLeft: width * .02
     }, textinput: {
         height: height * .08,
         width: width * .8,
         backgroundColor: "#fff",
-        marginLeft: width * .01,
+        marginLeft: width * .02,
         fontSize: 13,
         fontFamily: Const.font_family,
         color:Const.first_color
